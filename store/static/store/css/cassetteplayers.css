@@ -1,0 +1,179 @@
+/* Section Container */
+.section-container {
+    padding: 2rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin: 1rem; 
+    
+}
+/* Section Header Styles */
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+    position: relative;
+}
+/* Section Title */
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+/* Decorative Underline */
+.section-underline {
+    position: relative;
+    width: 75%;
+    height: 4px;
+    background-color: var(--mustard);
+    border: none;
+    margin: 1rem;
+    transition: width 0.3s ease;
+}
+/* Section Content */
+.section-content {
+    margin-top: 1.5rem;
+}
+/* Cassette Players Specific Styles */
+.cassette-section {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 2rem;
+}
+/* Section Description */
+.section-description {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #666;
+    margin: 1rem 0;
+    max-width: 60ch;
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .section-underline {
+        width: 100%;
+        margin: 1rem 0 0 0;
+    }
+    .section-title {
+        font-size: 1.75rem;
+    }
+}
+.vinyl-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.25rem;
+    padding: 1.25rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.vinyl-item {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+.vinyl-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(230, 185, 5, 0.1), transparent);
+    transform: translateX(-100%);
+    transition: 0.6s;
+}
+.vinyl-item:hover::before {
+    transform: translateX(100%);
+}
+.vinyl-item:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+.vinyl-item img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.5s ease;
+}
+.vinyl-item:hover img {
+    transform: scale(1.05);
+}
+.vinyl-item .des {
+    text-align: start;
+    padding: 0.625rem 0;
+}
+.vinyl-item .des span {
+    color: var(--accent-purple);
+    font-size: 0.75rem;
+}
+.vinyl-item .des h5 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+.vinyl-item .des h4 {
+    padding-top: 0.4375rem;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: var(--deep-navy);
+}
+.vinyl-item .cart {
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border-radius: 50%;
+    background-color: var(--deep-navy);
+    color: var(--cream);
+    border: none;
+    position: absolute;
+    bottom: 1.25rem;
+    right: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.vinyl-item .cart:hover {
+    background-color: var(--mustard);
+    transform: rotate(360deg);
+}
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .vinyl-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (max-width: 992px) {
+    .vinyl-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }    
+}   
+@media (max-width: 768px) {
+    .vinyl-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .vinyl-item:hover {
+        transform: translateY(-3px);
+    }
+}
+@media (max-width: 480px) {
+    .vinyl-grid {
+        grid-template-columns: 1fr;
+    }   
+}
+
+

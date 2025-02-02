@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eternal Records - FAQs</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'store/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'store/css/faqpolicy.css' %}">
+</head>
+<body>
+    <section id="header">
+        <a href="index.html">
+            <img src="{% static 'store/images/icons/erecords-logo-transparent.png' %}" class="logo" alt="Eternal Records Logo">
+        </a>
+        <button id="hamburger-icon">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div>
+            <ul id="navbar">
+                <li><a href="{% url 'index' %}">Vinyl</a></li>
+                <li><a href="{% url 'cassetteplayers' %}">Cassette Players</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'cart' %}">Cart</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+            </ul>
+        </div> 
+    </section>
+    <main class="faq-section">
+        <h1 class="faq-title">Frequently Asked Questions</h1>
+        
+        <div class="faq-item">
+            <h2 class="faq-question">What is your return policy?</h2>
+            <p class="faq-answer">
+                We accept returns within 30 days of purchase, provided that the item is in its original condition and packaging. To initiate a return, contact our customer support team with your order details.
+            </p>
+        </div>
+        <div class="faq-item">
+            <h2 class="faq-question">Do you ship internationally?</h2>
+            <p class="faq-answer">
+                Yes, we ship to most countries worldwide. Shipping rates and delivery times vary depending on your location. You can calculate the shipping cost at checkout or contact us for more details.
+            </p>
+        </div>
+        <div class="faq-item">
+            <h2 class="faq-question">How can I track my order?</h2>
+            <p class="faq-answer">
+                Once your order has shipped, we will send you a confirmation email with tracking information. You can use the tracking number to follow your order’s progress on the courier’s website.
+            </p>
+        </div>
+        <div class="faq-item">
+            <h2 class="faq-question">What payment methods do you accept?</h2>
+            <p class="faq-answer">
+                We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and Apple Pay. All transactions are securely processed to protect your personal and payment information.
+            </p>
+        </div>
+        <div class="faq-item">
+            <h2 class="faq-question">Can I cancel or modify my order?</h2>
+            <p class="faq-answer">
+                You can cancel or modify your order within 24 hours of placing it by contacting our support team. After this time, the order may have already been processed, and changes may not be possible.
+            </p>
+        </div>
+        <div class="faq-item">
+            <h2 class="faq-question">Do you offer gift cards?</h2>
+            <p class="faq-answer">
+                Yes, we offer digital gift cards in various amounts. Gift cards can be used for any purchase on our website and do not expire. You can purchase one from our “Gift Cards” section.
+            </p>
+        </div>
+        <div class="faq-item">
+            <h2 class="faq-question">What should I do if I receive a damaged or defective item?</h2>
+            <p class="faq-answer">
+                If your item arrives damaged or defective, please contact us immediately with photos of the issue. We’ll work with you to either replace the item or issue a refund based on the situation.
+            </p>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h3>About Us</h3>
+                <p>Eternal Records is your go-to destination for vinyl enthusiasts.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="{% url 'faq' %}">FAQs</a></li>
+                    <li><a href="{% url 'policy' %}">Shipping & Refund Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact Us</h3>
+                <p>Email: info@eternalrecords.com</p>
+                <p>Phone: +1 234 567 8900</p>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+            &copy; 2024 Eternal Records. All rights reserved.
+        </div>
+    </footer>
+    {% load static %}
+    <script src="{% static 'store/js/main.js' %}"></script>
+</body>
+</html>

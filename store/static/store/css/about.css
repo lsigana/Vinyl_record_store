@@ -1,0 +1,131 @@
+/* General styles for the About section */
+.about-section {
+    background-color: #f8f8f8; 
+    padding: 40px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    margin: 20px 0; 
+}
+/* Title styles */
+.about-title {
+    font-size: 2.5rem;
+    color: var(--deep-navy); 
+    text-align: center;
+    margin-bottom: 20px; 
+}
+/* Paragraph styles */
+.about-section p {
+    font-size: 1rem; 
+    line-height: 1.6;
+    color: var(--charcoal);
+    margin-bottom: 15px;
+}
+/* Newsletter section styles */
+.newsletter {
+    margin-top: 30px; 
+    text-align: center;
+}
+/* Subscribe button styles */
+.newsletter button {
+    background-color: var(--mustard);
+    color: white; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s;
+}
+/* Hover effect for the subscribe button */
+.newsletter button:hover {
+    background-color: var(--dark-mustard); 
+}
+/* Input field styles */
+.newsletter input[type="email"] {
+    padding: 10px; 
+    width: 250px; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    margin-right: 10px; 
+}
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .about-title {
+        font-size: 2rem; /* Slightly smaller title on small screens */
+    }
+
+    .newsletter input[type="email"] {
+        width: 80%; /* Full width for input on small screens */
+        margin-bottom: 10px; /* Space below the input */
+    }
+}
+/* Responsive Design */
+@media (max-width: 992px) {
+    #header {
+        padding: 0.625rem 2rem;
+    } 
+}
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #navbar li {
+        margin-bottom: 0.625rem;
+    }
+    
+}
+
+/* Footer Styling */
+.footer {
+    background-color: var(--deep-navy);
+    color: #f1f1f1;
+    padding: var(--cream);
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    text-align: center;
+}
+.footer-content div {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+.footer-content h3 {
+    font-size: 1.5rem;
+    color: var(--mustard);
+    margin-bottom: 1rem;
+}
+.footer-content p,
+.footer-content ul {
+    font-size: 1rem;
+    color: var(--cream);
+}
+.footer-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+.footer-content ul li {
+    margin-bottom: 0.5rem;
+}
+.footer-content ul li a {
+    color: var(--cream);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-content ul li a:hover {
+    color: var(--mustard);
+}
+.social-icons a {
+    display: inline-block;
+    font-size: 1.25rem;
+    color: var(--mustard);
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+.social-icons a:hover {
+    color: var(--cream);
+    transform: translateY(-3px);
+}

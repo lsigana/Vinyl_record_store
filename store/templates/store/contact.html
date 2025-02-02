@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eternal Records</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'store/css/style.css' %}">
+</head>
+<body>
+
+    <section id="header">
+        <a href="index.html">
+            <img src="{% static 'store/images/icons/erecords-logo-transparent.png' %}" class="logo" alt="Eternal Records Logo">
+        </a>
+        <div>
+            <ul id="navbar">
+                <li><a href="{% url 'index' %}">Vinyl</a></li>
+                <li><a href="{% url 'cassetteplayers' %}">Cassette Players</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'cart' %}">Cart</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+            </ul>
+        </div>
+            
+    </section>
+
+    <main>
+        <h1>Contact Us</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>About Us</h3>
+                <p>Eternal Records is your go-to destination for vinyl enthusiasts.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="{% url 'faq' %}">FAQs</a></li>
+                    <li><a href="{% url 'policy' %}">Shipping & Refund Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact Us</h3>
+                <p>Email: info@eternalrecords.com</p>
+                <p>Phone: +1 234 567 8900</p>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+            &copy; 2024 Eternal Records. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

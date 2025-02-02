@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eternal Records</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'store/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'store/css/cassetteplayers.css' %}">
+</head>
+<body>
+    <section id="header">
+        <a href="index.html">
+            <img src="{% static 'store/images/icons/erecords-logo-transparent.png' %}" class="logo" alt="Eternal Records Logo">
+        </a>
+        <button id="hamburger-icon">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div>
+            <ul id="navbar">
+                <li><a href="{% url 'index' %}">Vinyl</a></li>
+                <li><a href="{% url 'cassetteplayers' %}">Cassette Players</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'cart' %}">Cart</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+            </ul>
+        </div>
+    </section>
+    <section id="section-container cassette-section">
+        <div class="section-header">
+            <h2 class="section-title">Relive the Cassette Era</h2>
+            <hr class="section-underline">
+        </div>
+        <p class="section-description">Discover our collection of high-quality cassette players</p>
+    </section>
+    <section>
+        <div class="vinyl-grid">
+            <div class="vinyl-item">
+                <img src="{% static 'store/images/walkmans/amanz-Hyd4k0gbLoM-unsplash.jpg' %}" alt="Sony Walkman TPS-L2">
+                <div class="des">
+                    <span>Sony</span>
+                    <h5>Walkman TPS-L2</h5>
+                    <h5>CASSETTE PLAYER</h5>
+                    <h4>KSh4,800.00</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+            </div>
+            <div class="vinyl-item">
+                <img src="{% static 'store/images/walkmans/39fc9749-c480-4122-ad6d-4da45d527414.jfif' %}" alt="Sony WM-D6C">
+                <div class="des">
+                    <span>Sony</span>
+                    <h5>WM-D6C</h5>
+                    <h5>CASSETTE PLAYER</h5>
+                    <h4>KSh5,200.00</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+            </div>
+            <div class="vinyl-item">
+                <img src="{% static 'store/images/walkmans/Cassette Players_ New and Refurbished (2).jfif' %}" alt="Panasonic RQ-SX52">
+                <div class="des">
+                    <span>Panasonic</span>
+                    <h5>RQ-SX52</h5>
+                    <h5>CASSETTE PLAYER</h5>
+                    <h4>KSh4,500.00</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+            </div>
+            <div class="vinyl-item">
+                <img src="{% static 'store/images/walkmans/Cassette Players_ New and Refurbished (5).jfif' %}" alt="Aiwa HS-JX505">
+                <div class="des">
+                    <span>Aiwa</span>
+                    <h5>HS-JX505</h5>
+                    <h5>CASSETTE PLAYER</h5>
+                    <h4>KSh5,500.00</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+            </div>
+            <div class="vinyl-item">
+                <img src="{% static 'store/images/walkmans/Cassette Players_ New and Refurbished (1).jfif' %}" alt="Sony WM-EX618">
+                <div class="des">
+                    <span>Sony</span>
+                    <h5>WM-EX618</h5>
+                    <h5>CASSETTE PLAYER</h5>
+                    <h4>KSh4,700.00</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+            </div>
+            <div class="vinyl-item">
+                <img src="{% static 'store/images/walkmans/Cassette Players_ New and Refurbished.jfif' %}" alt="Sony WM-701C">
+                <div class="des">
+                    <span>Sony</span>
+                    <h5>WM-701C</h5>
+                    <h5>CASSETTE PLAYER</h5>
+                    <h4>KSh4,500.00</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+            </div>
+            <div class="vinyl-item">
+                <img src="{% static 'store/images/walkmans/eb764a05-fb7c-41aa-ac2b-28297b19bbb7.jfif' %}" alt="Aiwa HS-PL50">
+                <div class="des">
+                    <span>Aiwa</span>
+                    <h5>HS-PL50</h5>
+                    <h5>CASSETTE PLAYER</h5>
+                    <h4>KSh4,600.00</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+            </div>
+            <div class="vinyl-item">
+                <img src="{% static 'store/images/walkmans/Cassette Players_ New and Refurbished (4).jfif' %}" alt="Sony WM-FX290">
+                <div class="des">
+                    <span>Sony</span>
+                    <h5>WM-FX290</h5>
+                    <h5>CASSETTE PLAYER</h5>
+                    <h4>KSh4,900.00</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+            </div>
+            <div class="vinyl-item">
+                <img src="{% static 'store/images/walkmans/Cassette Players_ New and Refurbished (3).jfif' %}" alt="Sony WM-EX194">
+                <div class="des">
+                    <span>Sony</span>
+                    <h5>WM-EX194</h5>
+                    <h5>CASSETTE PLAYER</h5>
+                    <h4>KSh5,000.00</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+            </div>
+            <div class="vinyl-item">
+                <img src="{% static 'store/images/walkmans/enzo-tommasi-XgvvaQDt1T4-unsplash.jpg' %}" alt="Sony Walkman WM-FX303">
+                <div class="des">
+                    <span>Sony</span>
+                    <h5>WM-FX303</h5>
+                    <h5>Cassette Player</h5>
+                    <h4>KSh4,700.00</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+            </div>
+            <div class="vinyl-item">
+                <img src="{% static 'store/images/walkmans/Eternity __ Archive (@PureLifeEternal) on X.jfif' %}" alt="Sony Walkman TPS-L2">
+                <div class="des">
+                    <span>Sony</span>
+                    <h5>TPS-L2</h5>
+                    <h5>Cassette Player</h5>
+                    <h4>KSh4,700.00</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+            </div>
+            <div class="vinyl-item">
+                <img src="{% static 'store/images/walkmans/florian-schmetz-Rks6FTfX5OU-unsplash (1).jpg' %}" alt="Sony Walkman WM-DD9">
+                <div class="des">
+                    <span>Sony</span>
+                    <h5>WM-DD9</h5>
+                    <h5>Cassette Player</h5>
+                    <h4>KSh4,700.00</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+            </div>  
+            <div class="vinyl-item">
+                <img src="{% static 'store/images/walkmans/joecalih-NN15NFflk90-unsplash.jpg' %}" alt="Sony Walkman WM-EX622">
+                <div class="des">
+                    <span>Sony</span>
+                    <h5>WM-EX622</h5>
+                    <h5>Cassette Player</h5>
+                    <h4>KSh4,700.00</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+            </div>    
+            <div class="vinyl-item">
+                <img src="{% static 'store/images/walkmans/khurram-ali-ysvw4YuMEo4-unsplash.jpg' %}" alt="Sony Walkman WM-FX290W">
+                <div class="des">
+                    <span>Sony</span>
+                    <h5>WM-FX290W</h5>
+                    <h5>Cassette Player</h5>
+                    <h4>KSh4,700.00</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+            </div>  
+            <div class="vinyl-item">
+                <img src="{% static 'store/images/walkmans/silas-gregory-y5IhSVsIR6o-unsplash (1).jpg' %}" alt="Sony Walkman WM-F100">
+                <div class="des">
+                    <span>Sony</span>
+                    <h5>WM-F100</h5>
+                    <h5>Cassette Player</h5>
+                    <h4>KSh4,700.00</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+            </div>  
+            <div class="vinyl-item">
+                <img src="{% static 'store/images/walkmans/silas-gregory-yX9mZWIisrU-unsplash.jpg' %}" alt="Sony Walkman WM-FX381">
+                <div class="des">
+                    <span>Sony</span>
+                    <h5>WM-FX381</h5>
+                    <h5>Cassette Player</h5>
+                    <h4>KSh4,700.00</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+            </div>
+            <div class="vinyl-item">
+                <img src="{% static 'store/images/walkmans/Retrospekt CP-81 Portable Cassette Player.jfif' %}" alt="Retrospekt CP-81">
+                <div class="des">
+                    <span>Retrospekt</span>
+                    <h5>CP-81</h5>
+                    <h5>Cassette Player</h5>
+                    <h4>KSh4,700.00</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+            </div>
+            <div class="vinyl-item">
+                <img src="{% static 'store/images/walkmans/My Aesthetic For Stranger Things _ ShopLook.jfif' %}" alt="Aesthetic Cassette Player">
+                <div class="des">
+                    <span>Aesthetic</span>
+                    <h5>Cassette Player</h5>
+                    <h5>Vintage Style</h5>
+                    <h4>KSh4,700.00</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+            </div>
+            <div class="vinyl-item">
+                <img src="{% static 'store/images/walkmans/Sony Walkman 1979 innovation.jfif' %}" alt="Sony Walkman 1979">
+                <div class="des">
+                    <span>Sony</span>
+                    <h5>Walkman 1979</h5>
+                    <h5>Cassette Player</h5>
+                    <h4>KSh4,700.00</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+            </div>
+            <div class="vinyl-item">
+                <img src="{% static 'store//images/walkmans/Sony WMFX323 Portable AM_FM Stereo Cassette Tape Player with Headphones.jfif' %}" alt="Sony WM-FX323">
+                <div class="des">
+                    <span>Sony</span>
+                    <h5>WM-FX323</h5>
+                    <h5>Cassette Player</h5>
+                    <h4>KSh4,700.00</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+            </div>
+    
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h3>About Us</h3>
+                <p>Eternal Records is your go-to destination for vinyl enthusiasts.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="{% url 'faq' %}">FAQs</a></li>
+                    <li><a href="{% url 'policy' %}">Shipping & Refund Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact Us</h3>
+                <p>Email: info@eternalrecords.com</p>
+                <p>Phone: +1 234 567 8900</p>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+            &copy; 2024 Eternal Records. All rights reserved.
+        </div>
+    </footer>
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+    {% load static %}
+    <script src="{% static 'store/js/main.js' %}"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

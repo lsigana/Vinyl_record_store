@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eternal Records</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'store/css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'store/css/index.css' %}">
+    </head>
+    <body>
+        <!-- Nav Bar Section -->
+        <section id="header"> 
+            <a href="index.html">
+                <img src="{% static 'store/images/icons/erecords-logo-transparent.png' %}" class="logo" alt="Eternal Records Logo">
+            </a>
+            <button id="hamburger-icon">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div>
+                <ul id="navbar">
+                    <li><a href="{% url 'index' %}">Vinyl</a></li>
+                    <li><a href="{% url 'cassetteplayers' %}">Cassette Players</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'cart' %}">Cart</a></li>
+                    <li><a href="{% url 'login' %}">Login</a></li>
+                </ul>
+            </div>           
+        </section>
+        <!-- Featured Collections Section -->
+        <section id="featuredcollectionssection" class= "section-p1">
+            <h2>Featured Collections</h2>
+            <div class="collection-container">
+                <!-- Hip-Hop Collection Box -->
+                <div class="collection-box">
+                    <img src="{% static 'store/images/featured/doja-cat-5f4a3e91a1b99.jpg' %}" alt="Hip-Hop" class="collection-image">
+                    <div class="collection-title">hip-hop</div>
+                    <div class="collection-description">Hip-Hop Vinyl Collection</div>
+                    <a href="#" class="shop-link">SHOP THE COLLECTION ←</a>
+            </div>
+            <!-- Indie Pop + Rock Collection Box -->
+            <div class="collection-box">
+                <img src="{% static 'store/images/featured/omar-apollo-6476d5993dde7.jpg' %}" alt="Indie Pop + Rock" class="collection-image">
+                <div class="collection-title">indie pop + rock</div>
+                <div class="collection-description">Indie Rock + Pop Vinyl</div>
+                <a href="#" class="shop-link">SHOP THE COLLECTION ←</a>
+            </div>
+            <!-- Taylor Swift Collection Box -->
+            <div class="collection-box">
+                <img src="{% static 'store/images/featured/ctrl-63a319de37c03.jpg' %}" alt="Contemporary R+B" class="collection-image">
+                <div class="collection-title">Contemporary R+B</div>
+                <div class="collection-description">Contemporary R+B Vinyl</div>
+                <a href="#" class="shop-link">SHOP THE COLLECTION ←</a>
+            </div>
+        </section>
+        <section>
+            <h2 class="section-title">Hot New Vinyls<a href="#" style="float: right; font-size: 1rem;">View all</a></h2>
+            <div class="vinyl-grid">
+                <div class="vinyl-item">
+                    <img src="{% static 'store/images/album covers/Hot New Vinyls/after-hours-The Weeknd.jpg' %}" alt="After Hours - The Weeknd">
+                    <div class="des">
+                        <span>The Weeknd</span>
+                        <h5>After Hours</h5>
+                        <h5>VINYL LP</h5>
+                        <h4>KSh4,800.00</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+                </div>
+
+                <div class="vinyl-item">
+                    <img src="{% static 'store/images/album covers/Hot New Vinyls/ANTI Rihanna.jpg' %}" alt="ANTI - Rihanna">
+                    <div class="des">
+                        <span>Rihanna</span>
+                        <h5>ANTI</h5>
+                        <h5>VINYL LP</h5>
+                        <h4>KSh5,200.00</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+                </div>
+
+                <div class="vinyl-item">
+                    <img src="{% static 'store/images/album covers/Hot New Vinyls/caprisongs-FKA Twigz.jpg' %}" alt="Caprisongs - FKA Twigs">
+                    <div class="des">
+                        <span>FKA Twigs</span>
+                        <h5>Caprisongs</h5>
+                        <h5>VINYL LP</h5>
+                        <h4>KSh4,500.00</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+                </div>
+
+                <div class="vinyl-item">
+                    <img src="{% static 'store/images/album covers/Hot New Vinyls/cowboy-carter-Beyonce.jpg' %}" alt="Cowboy Carter - Beyoncé">
+                    <div class="des">
+                        <span>Beyoncé</span>
+                        <h5>Cowboy Carter</h5>
+                        <h5>VINYL LP</h5>
+                        <h4>KSh5,500.00</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+                </div>
+
+                <div class="vinyl-item">
+                    <img src="{% static 'store/images/album covers/Hot New Vinyls/currents-Tame Impala.jpg' %}" alt="Currents - Tame Impala">
+                    <div class="des">
+                        <span>Tame Impala</span>
+                        <h5>Currents</h5>
+                        <h5>VINYL LP</h5>
+                        <h4>KSh4,700.00</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+                </div>
+
+                <div class="vinyl-item">
+                    <img src="{% static 'store/images/album covers/Hot New Vinyls/dawn-fm-The weeknd.jpg' %}" alt="Dawn FM - The Weeknd">
+                    <div class="des">
+                        <span>The Weeknd</span>
+                        <h5>Dawn FM</h5>
+                        <h5>VINYL LP</h5>
+                        <h4>KSh4,500.00</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+                </div>
+
+                <div class="vinyl-item">
+                    <img src="{% static 'store/images/album covers/Hot New Vinyls/little-dark-age-MGMT.jpg' %}" alt="Little Dark Age - MGMT">
+                    <div class="des">
+                        <span>MGMT</span>
+                        <h5>Little Dark Age</h5>
+                        <h5>VINYL LP</h5>
+                        <h4>KSh4,600.00</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+                </div>
+
+                <div class="vinyl-item">
+                    <img src="{% static 'store/images/album covers/Hot New Vinyls/igor Tyler, The Creator.jpg' %}" alt="IGOR - Tyler, The Creator">
+                    <div class="des">
+                        <span>Tyler, The Creator</span>
+                        <h5>IGOR</h5>
+                        <h5>VINYL LP</h5>
+                        <h4>KSh4,900.00</h4>
+                    </div>
+                        <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+                </div>
+
+                <div class="vinyl-item">
+                    <img src="{% static 'store/images/album covers/Hot New Vinyls/scarlet CLAUDE Doja Cat.jpg' %}" alt="Scarlet - Doja Cat">
+                    <div class="des">
+                        <span>Doja Cat</span>
+                        <h5>Scarlet</h5>
+                        <h5>VINYL LP</h5>
+                        <h4>KSh5,000.00</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+                </div>
+
+                <div class="vinyl-item">
+                    <img src="{% static 'store/images/album covers/Hot New Vinyls/sos-SZA.jpg' %}" alt="SOS - SZA">
+                    <div class="des">
+                        <span>SZA</span>
+                        <h5>SOS</h5>
+                        <h5>VINYL LP</h5>
+                        <h4>KSh4,700.00</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-bag cart"></i></a>
+                </div>
+            </div>
+           
+        </section>
+        <section id="email-signup">
+            <h2>Sign up and save 15% off your next order if you're a new subscriber</h2>
+            <p>Be the first to hear about new releases and offers</p>
+            <form>
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>         
+        </main>    
+        <footer class="footer">
+            <div class="footer-content">
+                <div>
+                    <h3>About Us</h3>
+                    <p>Eternal Records is your go-to destination for vinyl enthusiasts.</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="{% url 'faq' %}">FAQs</a></li>
+                        <li><a href="{% url 'policy' %}">Shipping & Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact Us</h3>
+                    <p>Email: info@eternalrecords.com</p>
+                    <p>Phone: +1 234 567 8900</p>
+                </div>
+                <div>
+                    <h3>Follow Us</h3>                    
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>                
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                &copy; 2024 Eternal Records. All rights reserved.
+            </div>
+        </footer>
+        {% load static %}
+        <script src="{% static 'store/js/main.js' %}"></script>
+    </body>
+    </html>
+</html>
+
+
