@@ -27,8 +27,8 @@ SECRET_KEY = 'django-insecure-5zv#zof+))hrh$8wdv_8f7qetczkn%oj6=q(c1lrc9ckvpus)q
 # SECURITY WARNING: don't run with debug turned on in production!
 
 DEBUG=False
-SECRET_KEY=your-secret-key
-ALLOWED_HOSTS=[os.environ.get("ALLOWED_HOSTS", "your-railway-app-url")]
+SECRET_KEY = "a-very-secret-random-key-here"
+ALLOWED_HOSTS=[os.environ.get("ALLOWED_HOSTS", "https://.up.railway.app")]
 DATABASE_URL=your_postgresql_url
 
 
